@@ -1,0 +1,160 @@
+// The program input for ans/src/main.leo
+[initialize_collection]
+public total: u128 = 1000u128;
+public symbol: u128 = 1231234234u128;
+public base_uri: BaseURI = BaseURI{
+    data0: 1251098233860921312312320980986u128,
+    data1: 93463727527473386092131231231286u128,
+    data2: 657534534512320980986u128,
+    data3: 12510982u128
+};
+
+[set_mint_block]
+public mint_block: u32 = 123213u32;
+
+[update_base_uri]
+public base_uri:  BaseURI = BaseURI{
+    data0: 320980986u128,
+    data1: 9473386092131231231286u128,
+    data2: 0u128,
+    data3: 10u128
+};
+
+
+[update_toggle_settings]
+public toggle_settings_bitstring: u32 = 1u32;
+
+
+[register]
+name: AleoName = AleoName{
+    data0: 123214719u128, 
+    data1: 0u128,
+    data2: 0u128, 
+    data3: 0u128 
+};
+receiver: address = aleo13ssze66adjjkt795z9u5wpq8h6kn0y2657726h4h3e3wfnez4vqsm3008q;
+pay_record: credits = credits {
+    microcredits: 1000u64,
+    owner: aleo1qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq3ljyzc
+};
+
+[register_sub]
+name: AleoName = AleoName{
+    data0: 123214719u128, 
+    data1: 0u128,
+    data2: 0u128, 
+    data3: 0u128 
+};
+receiver: address = aleo13ssze66adjjkt795z9u5wpq8h6kn0y2657726h4h3e3wfnez4vqsm3008q;
+parent: NFT = NFT {
+    owner: aleo13ssze66adjjkt795z9u5wpq8h6kn0y2657726h4h3e3wfnez4vqsm3008q,
+    data: TokenId{
+        data0: 1u128, // data1 to data3 store the AleoName structure
+        data1: 0u128,
+        data2: 0u128,
+        data3: 0u128,
+        parent: 0field
+    },
+    edition: 0scalar
+};
+
+[register_sub_public]
+name: AleoName = AleoName{
+    data0: 123214719u128, 
+    data1: 0u128,
+    data2: 0u128, 
+    data3: 0u128 
+};
+receiver: address = aleo13ssze66adjjkt795z9u5wpq8h6kn0y2657726h4h3e3wfnez4vqsm3008q;
+parent: field = 0field;
+
+
+[authorize]
+nft: NFT = NFT {
+    owner: aleo13ssze66adjjkt795z9u5wpq8h6kn0y2657726h4h3e3wfnez4vqsm3008q,
+    data: TokenId{
+        data0: 1u128, // data1 to data3 store the AleoName structure
+        data1: 0u128,
+        data2: 0u128,
+        data3: 0u128,
+        parent: 0field
+    },
+    edition: 0scalar
+};
+
+[burn]
+nft: NFT = NFT {
+    owner: aleo13ssze66adjjkt795z9u5wpq8h6kn0y2657726h4h3e3wfnez4vqsm3008q,
+    data: TokenId{
+        data0: 1u128, // data1 to data3 store the AleoName structure
+        data1: 0u128,
+        data2: 0u128,
+        data3: 0u128,
+        parent: 0field
+    },
+    edition: 0scalar
+};
+
+[is_avaiable]
+name_hash: field = 0field;
+
+
+[transfer_privatly]
+nft: NFT = NFT {
+    owner: aleo13ssze66adjjkt795z9u5wpq8h6kn0y2657726h4h3e3wfnez4vqsm3008q,
+    data: TokenId{
+        data0: 1u128, // data1 to data3 store the AleoName structure
+        data1: 0u128,
+        data2: 0u128,
+        data3: 0u128,
+        parent: 0field
+    },
+    edition: 0scalar
+};
+private receiver: address = aleo17vy26rpdhqx4598y5gp7nvaa9rk7tnvl6ufhvvf4calsrrqdaqyshdsf5z;
+
+[transfer_publicly]
+private receiver: address = aleo17vy26rpdhqx4598y5gp7nvaa9rk7tnvl6ufhvvf4calsrrqdaqyshdsf5z;
+private name_hash: field = 0field;
+
+
+[convert_private_to_public]
+nft: NFT = NFT {
+    owner: aleo13ssze66adjjkt795z9u5wpq8h6kn0y2657726h4h3e3wfnez4vqsm3008q,
+    data: TokenId{
+        data0: 1u128, // data1 to data3 store the AleoName structure
+        data1: 0u128,
+        data2: 0u128,
+        data3: 0u128,
+        parent: 0field
+    },
+    edition: 0scalar
+};
+
+
+[convert_public_to_private]
+token_id: TokenId = TokenId{
+    data0: 1u128, // data1 to data3 store the AleoName structure
+    data1: 0u128,
+    data2: 0u128,
+    data3: 0u128,
+    parent: 0field
+};
+
+[set_primary_name]
+name_hash: field = 0field;
+
+
+[set_ans_resolver]
+name_hash: field = 0field;
+category: u128 = 1u128;
+content: AleoName = AleoName{
+    data0: 11211231231314719u128, 
+    data1: 0u128,
+    data2: 0u128, 
+    data3: 0u128 
+};
+
+[free_ans_resolver]
+name_hash: field = 1field;
+category: u128 = 0u128;
